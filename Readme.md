@@ -1,7 +1,7 @@
 # How to display word cloud from PDF resume Using Python and the Google Cloud Vision API
 
 
-![alt text](static/wordcloud.png)
+![wordcloud](static/wordcloud.png)
 
 While I am looking for a job after my graduation, I faced an issue of not getting interview calls for positions that I  played to, where I was sure that the jobs description overlaps with my skills.
 So I began my search to know what is the problem, where I cam across of this online [WordCloud generator](https://monkeylearn.com/word-cloud/) to generate the word cloud for my resume and job description and visualize the most keys words represented in both text. The draw back of this that my resume was in pdf version, while copying the content the copied text was missing many words or miss spelling ones.
@@ -191,8 +191,10 @@ def write_to_text(gcs_destination_uri):
 
 This function only accepts one argument: the URI of the location where our annotations were saved. In addition to publishing the results of the transcription in your terminal, it will save them to a text file in your currently active directory.
 
-```
+The generated file is saved in txt file locally. We read the text and apply text processing on it by removing stop words, personal information as these are not important. We also remove dates, places names.
 
+
+```
 if "__main__" == __name__:
 
     async_detect_document("gs://ocr-test-data/pdfs/Resume.pdf", "gs://ocr-test-data/results/")
@@ -220,7 +222,7 @@ Here's a side-by-side comparison of some of my results.
      <td>WordCloud</td>
   </tr>
   <tr>
-    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=300 height=400></td>
-    <td><img src="static/wordcloud-software.png " width=300 height=400></td>
+    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=400 height=460></td>
+    <td><img src="static/wordcloud-software.png " width=400 height=460></td>
   </tr>
  </table>

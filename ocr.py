@@ -116,6 +116,7 @@ def write_to_text(gcs_destination_uri):
             # including confidence scores and bounding boxes
             # print('Full text:\n')
             # print(annotation['text'])
+            # Save the text in text file
             with open("transcription.txt", "a+", encoding="utf-8") as f:
                 f.write(annotation['text'])
 
@@ -153,8 +154,8 @@ def word_cloud_plot(text):
     plt.imshow(wordcloud)
     plt.axis("off")
     plt.tight_layout(pad = 0)
-
     plt.show()
+    # Save the image
     wordcloud.to_file("wordcloud.png")
 
 def personal_information_filter(text):
