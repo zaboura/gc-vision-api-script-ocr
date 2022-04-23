@@ -181,7 +181,7 @@ def personal_information_filter(text):
 
 if "__main__" == __name__:
 
-    async_detect_document("gs://ocr-test-data/pdfs/Software-Engineering-Resume-Sample-compressed.pdf", "gs://ocr-test-data/results/")
+    async_detect_document("gs://ocr-test-data/pdfs/Resume-Sample-compressed.pdf", "gs://ocr-test-data/results/")
     
     write_to_text("gs://ocr-test-data/results/")
     # Read text
