@@ -17,13 +17,11 @@ For this reason I decided to write this guide to build an OCR for my resume.
 
 ## Setting up Your Google Cloud Vision Account
 
-You must have a Google Cloud account to use Google Cloud Vison for optical charachter recognition. The first will allowed to access to Google's Cloud services dashboard. One of the various services available through this dashboard is file storage, which we will use to host the PDF file we will be converting to text.
-
-<!-- <img src="static/storage.png" alt="drawing" width="400" heigth="50"/> -->
+You must have a Google Cloud account to use Google Cloud Vision for optical character recognition. The first will allowed to access to Google's Cloud services dashboard. One of the various services available through this dashboard is file storage, which we will use to host the PDF file we will be converting to text.
 
 Because the complex machine learning techniques that we will be using via the Cloud Vision API are cloud-based, we will need to submit our PDF to a "bucket" of files held by Google in order for it to be available.
 This guide will walk you through the process of saving the final result, a text file containing all of the text in your PDF, to a spot on your computer.
-1.  In case you don't have a Google Cloud account, refer to this [link](https://cloud.google.com/) and create an account an log in.
+1. In case you don't have a Google Cloud account, refer to this [link](https://cloud.google.com/) and create an account an log in.
 2. Once signed in to your Google account, click this [link](https://console.cloud.google.com/home/) to access your Google Cloud dashboard. If you are prompted to accept the terms of service, do so. You should end up on a page similar to this one.
 ![The Google Cloud Platform Dashboard](static/dashboard.png)
 
@@ -53,16 +51,10 @@ You are now prepared to develop a program that can access both this file and the
 
 At this stage, you have set-up everything needed on Google Cloud Platform. To develop a script that will generate World Cloud of your resume, you might need to install some libraries.
 
-You need to do some installation in your python environment. you can use the __requirements__ file provided on the my __Github__ repository to avoid dependencies conflicts, or you can copy them from the list bellow.
+You need to do some installation in your python environment--For my case I worked with python3.7. you can use the __requirements__ file provided on the my __[Github](https://github.com/zaboura/gc-vision-api-script-ocr)__ repository to avoid dependencies conflicts, or you can copy them from the list bellow.
 
 ```
-pip install google-cloud-storage
-pip install google-cloud-vision
-pip install matplotlib
-pip install nltk
-pip install numpy
-pip install spacy
-pip install wordcloud 
+pip install google-cloud-storage google-cloud-vision matplotlib nltk numpy spacy grpcio wordcloud 
 ```
 
 Finally, you should set-up Google Cloud credential to your Python environment using JSON downloaded file. With this authentication you will identify your computer to Google Cloud Services.
@@ -222,7 +214,9 @@ Here's a side-by-side comparison of some of my results.
      <td>WordCloud</td>
   </tr>
   <tr>
-    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=400 height=460></td>
-    <td><img src="static/wordcloud-software.png " width=400 height=460></td>
+    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=450 height=460></td>
+    <td><img src="static/wordcloud-software.png " width=450 height=460></td>
   </tr>
  </table>
+
+ ### All the code is available in my [GitHub repo](https://github.com/zaboura/gc-vision-api-script-ocr)
