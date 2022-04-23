@@ -212,11 +212,15 @@ To run the app, you need to add the last chunk to the script with proper RUI, mi
 
 
 Congratulations! If everything went as planned, you should now have a text file containing a line-by-line transcription of all the machine-readable content in your PDF.
-Here's a side-by-side comparison of some of my findings.
+Here's a side-by-side comparison of some of my results.
 
-Resume             |  WordCloud
-:-------------------------:|:-------------------------:
-![alt-text-1](static/Software-Engineering-Resume-Sample-compressed-1.png "resume") | 
- ![alt-text-2](static/wordcloud-software.png "wordcloud")
-
-
+<table>
+  <tr>
+    <td>Resume</td>
+     <td>WordCloud</td>
+  </tr>
+  <tr>
+    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=300 height=400></td>
+    <td><img src="static/wordcloud-software.png " width=300 height=400></td>
+  </tr>
+ </table>
