@@ -1,7 +1,7 @@
 # How to display word cloud from PDF resume Using Python and the Google Cloud Vision API
 
 
-![wordcloud](static/wordcloud.png)
+![wordcloud](static/wc.png)
 
 While I am looking for a job after my graduation, I faced an issue of not getting interview calls for positions that I  played to, where I was sure that the jobs description overlaps with my skills.
 So I began my search to know what is the problem, where I cam across of this online [WordCloud generator](https://monkeylearn.com/word-cloud/) to generate the word cloud for my resume and job description and visualize the most keys words represented in both text. The draw back of this that my resume was in pdf version, while copying the content the copied text was missing many words or miss spelling ones.
