@@ -1,9 +1,19 @@
 # Create WordCloud from PDF resume using Python and the Google Cloud Vision API
 
-To run this script you have to create Google Cloud account, upload the document ot your Google Cloud storage, download your JSON credentials and set up Python3 environment.
+![wordcloud](static/wc.png)
 
-```
-python orc.py
-```
+For technical instruction and for guide to create a Google account and a project with Google Cloud Vision API, please refer to this blog.
+If you followed the guide and everything went as planned, you should now have a text file containing a line-by-line transcription of all the machine-readable content in your PDF.
 
-For more details check out this [blog]() 
+Here's a side-by-side comparison of some of my results.
+
+<table>
+  <tr>
+    <td>Resume</td>
+     <td>WordCloud</td>
+  </tr>
+  <tr>
+    <td><img src="static/Software-Engineering-Resume-Sample-compressed-1.png" width=450 height=460></td>
+    <td><img src="static/wordcloud-software.png " width=450 height=460></td>
+  </tr>
+ </table>
