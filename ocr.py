@@ -14,7 +14,7 @@ import os
 
 
 # ! Add your credential JASON file path
-os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="../ocr-test-344811-c1e722186220.json"
+os.environ["GOOGLE_APPLICATION_CREDENTIALS"]="../path_to_credential_json_file.json"
 
 def process_text(text):
     # preprocess the text
