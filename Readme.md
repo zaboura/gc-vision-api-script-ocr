@@ -2,7 +2,9 @@
 
 ![wordcloud](static/wc.png)
 
-### To set up your Google Cloud Vision API, please refer to [this blog](https://towardsdatascience.com/how-to-extract-the-text-from-pdfs-using-python-and-the-google-cloud-vision-api-7a0a798adc13)
+### To set up your Google Cloud Vision API, please refer to this [link](https://cloud.google.com/vision/docs/setup). Within your project create a bucket to store you document by uploading them, for documentation refer to this [link](https://cloud.google.com/storage/docs/creating-buckets), after creating the bucket leave the default parameters.
+
+
 
 You should set up Google Cloud credentials to your Python environment using the JSON downloaded files. With this authentication, you will identify your computer to Google Cloud Services.
 
